@@ -1,0 +1,222 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="960,2467" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="628,2402" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="si:FileInfo" Name="Downloaded_file_MASTERLIST_CPPM_CP" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Masterlist_CPPM-CP.xlsx" sap:VirtualizedContainerService.HintSize="586,2314" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="76b71075-f44b-4b99-a284-c12f63f0225c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,2097" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76b71075-f44b-4b99-a284-c12f63f0225c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://excel.officeapps.live.com/x/_layouts/xlviewerinternal.aspx?edit=1&amp;ui=en%2DGB&amp;rs=en%2DUS&amp;wopisrc=https%3A%2F%2Ftm365.sharepoint.com%2Fsites%2FCentralizedPlanning%2F_vti_bin%2Fwopi.ashx%2Ffiles%2Fd6db0cef63ed488cb22d7c897bc0ce74&amp;activecell=%27CPPM%2DPR%27%21C2192&amp;wdinitialsession=266ab7a4-f68c-4c98-bcc0-4d15bbc64a09&amp;wdrldsc=9&amp;wdrldc=1&amp;wdrldr=AccessTokenExpiredWarning%2CRefreshingExpiredAccessT&amp;wdenableroaming=1&amp;mscc=1&amp;hid=063CE3A0-108F-2000-9956-76950CAE51D6&amp;wdorigin=AuthPrompt&amp;jsapi=1&amp;jsapiver=v1&amp;newsession=1&amp;corrid=e39f3cf0-e3b3-4f4b-aef3-1d0821cf9e3d&amp;usid=e39f3cf0-e3b3-4f4b-aef3-1d0821cf9e3d&amp;sftc=1&amp;cac=1&amp;mtf=1&amp;sfp=1&amp;wdredirectionreason=Force_SingleStepBoot&amp;preseededsessionkey=9ba9263d-7cc1-de26-8f2c-59477373ef66&amp;preseededwacsessionid=b10213ac-acfc-0e69-230a-061216cba28e&amp;rct=Normal&amp;ctp=LeastProtected" CvTextArea="33, 169, 22, 13" CvTextArgument="File" CvType="Text" DesignTimeRectangle="34, 166, 21, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'File'" FullSelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='id__3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='id__3' tag='SPAN' type='' class='ms-Button-label label-117' aaname='File' check:innerText='File' /&gt;" Guid="3f706334-2910-4497-8540-f5a61bb4f5a1" InformativeScreenshot="bf2c183674d3674b1b5a83e40a308156.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Masterlist_CPPM-CP.xlsx' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="67, 128, 38, 15" CvTextArgument="Excel" CvType="Text" DesignTimeRectangle="60, 112, 56, 48" ElementType="Text" FriendlyName="'Excel'" FullSelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl class='label-338' parentid='AppBrand' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl class='label-338' parentid='AppBrand' tag='DIV' type='' aaname='Excel' check:innerText='Excel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAA0CAYAAADWr1sfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVGhD7ZpPaxpBGMb9CP0mfoZ+gd568ZxrL9KDB4/eUoTgwUMJgu2hEOlBaAgihAihJSFKCUsZCTL0sDSKZLfLsojI0/m37mK20EJal9l34CfO+7w7+My88+7FUhiGKBKlxWKBIlGCGc/qzwtBSX6QYYshw7ZDhm2HDNsOGbYdMmw7ZNh2yLDtkOE8U58F6reym2z9T/grw925Sn00vFk7M/+p2Zthb8nBfiRcXTcy85+aPRkOcHGarf9r8mX44xfcS3kzxdvmTiwco65iFRxcjsGjlYyqEUUOWvEazQZaMxfexojrAGxyhLLRc3fCr74t1Vr6TleT/LOK0utM61gvwWYjnNyOwcIpuur5msiXG7EC50KbjHDl6zm7rurn89G00hvQxkUoYy76nx1E4ps0r06oMwSX0pqj+z5Zc8tQ59+zwyTWGelnHkZ4IeY5aVoOur0kp3w2hqfTRL3GpSy4nOrQ93fb3DSv77SZzCHXETn5bFqnKcPy7sbxG3VWv32FxWb4bQMHvR0+VFWV5M9w05T0hqPPXJkM784Y7JkGtnLwJj71NKYCsBzi5a5myElJC5xjoVdSp1QT80MM1DTeoAparunOoml9ZUOcMAd827Ti+y8qOJhiMBG6bGq+i4HZ4L0ZfjTmn5K7a+6bzC+f60aUlHYNLcbhrWVQjM0KnmhI27JvH6M/DxDFryWp++K11dH6fzdsA2TYdsiw7ZBh2yHDtkOGbYcM2w4Zth0ybDvF+/tw8NNHkSiYYR+/AKnLvzGhK1y+AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save As'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76b71075-f44b-4b99-a284-c12f63f0225c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://excel.officeapps.live.com/x/_layouts/xlviewerinternal.aspx?edit=1&amp;ui=en%2DGB&amp;rs=en%2DUS&amp;wopisrc=https%3A%2F%2Ftm365.sharepoint.com%2Fsites%2FCentralizedPlanning%2F_vti_bin%2Fwopi.ashx%2Ffiles%2Fd6db0cef63ed488cb22d7c897bc0ce74&amp;activecell=%27CPPM%2DPR%27%21C2192&amp;wdinitialsession=266ab7a4-f68c-4c98-bcc0-4d15bbc64a09&amp;wdrldsc=9&amp;wdrldc=1&amp;wdrldr=AccessTokenExpiredWarning%2CRefreshingExpiredAccessT&amp;wdenableroaming=1&amp;mscc=1&amp;hid=063CE3A0-108F-2000-9956-76950CAE51D6&amp;wdorigin=AuthPrompt&amp;jsapi=1&amp;jsapiver=v1&amp;newsession=1&amp;corrid=e39f3cf0-e3b3-4f4b-aef3-1d0821cf9e3d&amp;usid=e39f3cf0-e3b3-4f4b-aef3-1d0821cf9e3d&amp;sftc=1&amp;cac=1&amp;mtf=1&amp;sfp=1&amp;wdredirectionreason=Force_SingleStepBoot&amp;preseededsessionkey=9ba9263d-7cc1-de26-8f2c-59477373ef66&amp;preseededwacsessionid=b10213ac-acfc-0e69-230a-061216cba28e&amp;rct=Normal&amp;ctp=LeastProtected" CvTextArea="70, 396, 50, 13" CvTextArgument="Save As" CvType="Text" DesignTimeRectangle="72, 396, 88, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Save As'" FullSelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='id__1182' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='id__1182' tag='SPAN' type='' class='ms-Button-label textContainer label-490' aaname='Save As' check:innerText='Save As' /&gt;" Guid="64e18008-fb7a-4c41-973f-5f4d2a4f8d89" InformativeScreenshot="cbc57a309a14140d9921c1f577ce9472.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Masterlist_CPPM-CP.xlsx' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="71, 360, 26, 13" CvTextArgument="Info" CvType="Text" DesignTimeRectangle="72, 360, 88, 14" ElementType="Text" FriendlyName="'Info'" FullSelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='id__1179' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='id__1179' tag='SPAN' type='' class='ms-Button-label textContainer label-490' aaname='Info' check:innerText='Info' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAASCAYAAADWvblEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVFhH7ZYxEkRAEEX3CK7kXu4hdwdyBxi5RIlFqgTCvzNmLTOrWGV04nfVC3Q3wZueLq8oiUHkoHBhKFwYChfGEZ51QN+kTsM+KcoRU5x777lcEp40A9DlmzWyzSXh528E2RGeo8aAUlXo7dbQ0SKbassqsaH7ir08mTkQrmOskEzPH5mrFeL2/9Yj1erEfEjEcDzh6wk1Ar8H4PUX5ib4cu0h1GqdezbhhHu1Gfeb5OYJtz2c8IVwwrnD/yKgcIP/l0LZPo5wcj8ULgyFC0PhosR4A5AvVzUvr+T4AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[Downloaded_file_MASTERLIST_CPPM_CP]" sap:VirtualizedContainerService.HintSize="510,501" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+              <ui:GetLastDownloadedFile.Body>
+                <ActivityAction>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download a'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76b71075-f44b-4b99-a284-c12f63f0225c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excel.officeapps.live.com/x/_layouts/xlviewerinternal.aspx?edit=1&amp;ui=en%2DGB&amp;rs=en%2DUS&amp;wopisrc=https%3A%2F%2Ftm365.sharepoint.com%2Fsites%2FCentralizedPlanning%2F_vti_bin%2Fwopi.ashx%2Ffiles%2Fd6db0cef63ed488cb22d7c897bc0ce74&amp;activecell=%27CPPM%2DPR%27%21C2192&amp;wdinitialsession=266ab7a4-f68c-4c98-bcc0-4d15bbc64a09&amp;wdrldsc=9&amp;wdrldc=1&amp;wdrldr=AccessTokenExpiredWarning%2CRefreshingExpiredAccessT&amp;wdenableroaming=1&amp;mscc=1&amp;hid=063CE3A0-108F-2000-9956-76950CAE51D6&amp;wdorigin=AuthPrompt&amp;jsapi=1&amp;jsapiver=v1&amp;newsession=1&amp;corrid=e39f3cf0-e3b3-4f4b-aef3-1d0821cf9e3d&amp;usid=e39f3cf0-e3b3-4f4b-aef3-1d0821cf9e3d&amp;sftc=1&amp;cac=1&amp;mtf=1&amp;sfp=1&amp;wdredirectionreason=Force_SingleStepBoot&amp;preseededsessionkey=9ba9263d-7cc1-de26-8f2c-59477373ef66&amp;preseededwacsessionid=b10213ac-acfc-0e69-230a-061216cba28e&amp;rct=Normal&amp;ctp=LeastProtected" DesignTimeRectangle="203, 341, 566, 56" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Download a'" FullSelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='DownloadACopy' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl id='DownloadACopy' tag='BUTTON' type='button' class='fui-Button ri7kuyr fui-CompoundButton ___uckqib0 f11ysow2 f1um431h fte7hqw f1yh8ef3 fi3u9nm f1tdgb9w fp9bwmr f81rol6 f150uoa4 frdkuqy fkhj508 f1i3iumi f3rmtva f1lmfglv f10wn3eb f1jlhsmd fri7z93 fqrbt79 fepn2xe f22iagw f122n59 f1u2zbm2 f6dzj5z fsuw20m fwjs97m fupv0jl fj6v7ga fmpuflr f691a8u f10pi13n fbeyite f1mtd64y f1y7q3j9 f1p3nwhy f11589ue f1q5o8ev f1pdflbu fte7r6 f1s2uweq fr80ssc f1ukrpxl fecsdlb f1p9uz89 fiu8gst f1byx217 f1awoz4y f4oldr f1r70fqy f1w5vqlt fcuo6z8 f1vmijz1 flkqa70 fc7lc1z ffhwek3 f1ndfjem feb2qe3 fyjnic2 f11y7xws f1b7fgj0 f10bkdoy fcwkpnv ff472gp f4yyc7m fggejwh ft2aflc fkc42ay f2j6mnl f4lkoma f102ap7v f1wx2m9h f14y68ip f1e4kh5 f13ryxge f1vk6n1m f1p0aczq f25wwuw f1eg9ont f1klttdl fgfx8nr fo3vmhj fi5966k f14hsth1 fg9sqjc f1us4ss5 fzr3v1k fp3sw4e f1xl80mj f1vhmt4u fkd8k73 fnc34yc f19u2o0o fx7d7q1 f9xw3qy f1g5znyk f1kl38ls f1g8odzs f67slxs fwe7sjs f1q93osb f1c93b7z f1wd8eqg fh3xi4r fsxrzjo f1gd2g5g f1bujhc2 f1v3rxqc f5e1b4b f9z7srk fbvr5w0 f16k5j0g f1dotbis f1pxyubt' aaname='Download a CopyDownload a copy to your computer.' check:innerText='Download a Copy&amp;#xD;&amp;#xA;Download a copy to your computer.' /&gt;" Guid="c8c1afa4-3655-4806-8452-d08822af8349" InformativeScreenshot="a237d0ceed35424fe9e157c9c5fc6c97.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Masterlist_CPPM-CP.xlsx' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArea="272, 351, 127, 19" CvTextArgument="Download a Copy" CvType="Text" DesignTimeRectangle="273, 351, 485, 20" ElementType="Text" FriendlyName="'Download a Copy'" FullSelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='Download a Copy' parentid='DownloadACopy' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WebApplicationFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='Download a Copy' parentid='DownloadACopy' tag='SPAN' type='' class='FileMenuButtonText FileMenuButtonPrimaryText' check:innerText='Download a Copy' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAekAAAAYCAYAAADedwWfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANOSURBVHhe7dkBbuIwEEDRvctuT0bP0nIW1JtU4hqVeok09tiOPTNOArtlneo/Cal1ghMHiU/g1wQAAIZEpAEAGBSRBgBgUEQaAIBBHS/S7y/T05+X6Zr+/U7X8+/p6fyIIwEAYDWR/nw7zQGcw6QfI4Xqx0T6Or2aa/2YdQEAjsFG+nSZPtP/4nO6nEJATtPlIw39Tz8g0vJhyF7P63mQawwAGMKOSIsYrM62hzp6pB94/gCAY9sd6enjMj2buz/9lW213ds/Bqodi8fMIcwBi89d5n19l82RF7k4Vp2Hswa5e132eX7Te6i1zOe0J9Lb89bkW4n1fRZ6bnMu5Vq0517md1+zmXcNAQDD2R/pFIISzBTSJjgplrKPDVKMXvMctU+ObXUOEqoqKCowsr0NkRynjtB87nXg0rkv8Ze11edaArka6a15lV40HXYN6WeH+vXJ16ver3ld/A8F3/INAQDgn7sh0vKGnwPUe6Ovx+N8ZZ8QwtMcNTtWohWjoyMmAS3hayKtthW98ayNV2/dt8fMj2IRA1qHt6MXcz3uXi+1nrBPszZ1zQEAw7rzTroNdqOOQh3UEJgwXodKB6Tev1iJ9Er0QmDbWMo8cucpj7zd7iv2Rbo/r9GLr6avS6Guu3u9Zs24inJ3bgDAaG78TTq/8e+MdApY2C/MLfFanmvi6Ebn7yMd11XPkc4hb7830lvzWmotPd2Q3hPpdn3h783jAwCGsDPSNj69gOlxCcR1fv5yNyfBbseiWyOttxX1uBdOG2m7btmnH+nteT3+sZTeHbce70TavDbhefGY4bo4UQcADGk70jEMTqzSeBOkGA0vvCpMeUwHw43OWqTTOatj6hDqaOU74HLuzlryPv1I75jXleLvxnVZR5y72cf50LBybdsPLuG589xv87aV9QAAxmIjHd70m4eKbi0HvDxseObcxMi24ZIxE4w7Ih2Y8zYhSsdLD7mLV+ek1hK2mTtSY8e8He61VseSUC8PM2++FjnW6WG/WcjHW3ktAQDDaSKNg3E/1PhipPW3JACAoRHpI9sd6e3fygEA4yHSR7Y30jfccQMAxkGkj2wzvvk3c36LBoAjItIAAAyKSAMAMCgiDQDAoIg0AABDmqYv/3+D89ZMVYcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopLeft" X="136" Y="24" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:GetLastDownloadedFile.Body>
+            </ui:GetLastDownloadedFile>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,1072" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" TemplatePath="[string.Format(&quot;{0}\Downloads\Masterlist_CPPM-CP.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" UseTemplate="True" WorkbookPath="[Downloaded_file_MASTERLIST_CPPM_CP.FullName]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,780" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:FilterX ColumnName="{x:Null}" FilterArgument="{x:Null}" ClearFilter="True" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,169" Range="[Excel.Sheet(&quot;CPPM-PR&quot;)]" />
+                    <ueab:FilterX ColumnName="{x:Null}" FilterArgument="{x:Null}" ClearFilter="True" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,169" Range="[Excel.Sheet(&quot;CPPM-PR&quot;)]" />
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,272" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;CPPM-PR&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="MATERLIST_CPPM_CP" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="300,82" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" IconBase64="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" InformativeScreenshot="709c28a6b346a0b4aa3f811b9dcd97fb.jpg" Selector="&lt;html app='msedge.exe' title='Masterlist_CPPM-CP.xlsx' /&gt;" Title="Masterlist_CPPM-CP.xlsx" Url="https://tm365.sharepoint.com/:x:/r/sites/CentralizedPlanning/_layouts/15/doc2.aspx?sourcedoc=%7Bd6db0cef-63ed-488c-b22d-7c897bc0ce74%7D&amp;action=edit&amp;activeCell=%27CPPM-PR%27!C2192&amp;wdinitialsession=266ab7a4-f68c-4c98-bcc0-4d15bbc64a09&amp;wdrldsc=9&amp;wdrldc=1&amp;wdrldr=AccessTokenExpiredWarning%2CRefreshingExpiredAccessT" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
